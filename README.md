@@ -1,4 +1,5 @@
-Primero que nada quiero agradecer la oportunidad que me dan con esta prueba Tecnica.
+ <img src="https://media.giphy.com/media/scZPhLqaVOM1qG4lT9/giphy.gif" alt="gif" style="width:250px;height:250px">
+Primero que nada quiero agradecer la oportunidad que me dan con esta prueba Tecnica. 🚀🚀
 NOTA: El Archivo JSON tienen imagenes rotas que no se renderizan
 
 ¿Cómo decidió las opciones técnicas y arquitectónicas utilizadas como parte de su solución?
