@@ -1,34 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Primero que nada quiero agradecer la oportunidad que me dan con esta prueba Tecnica.
+NOTA: El Archivo JSON tienen imagenes rotas que no se renderizan
 
-## Getting Started
+¿Cómo decidió las opciones técnicas y arquitectónicas utilizadas como parte de su solución?
+Con respecto al Proyecto, decidi dividir el Proyecto en componentes separados con sus respectivas carpetas, utilizando las caracteristicas que brinda NextJs como 
+Image, Link y otras caracteristicas como lo son el Loading y el Error para mejor manejo de cargado de los componentes importantes para la funcionalidad y optimizacion del Proyecto.
+En cada carpeta decidi exportar las imagenes con archivo barril para tener mejor organizacion del codigo y ahorrar repetir tanto, a su vez tambien hice un archivo aparte de los Types que mas se usan en el proyecto.
+¿Hay alguna mejora que pueda hacer en su envío?
+Podria arreglar las tarjetas para mejor vision y experiencia para el usuario, A parte buscaria una solucion mas optima para la falla de carga de las imagenes que sucedio en el archivo JSON, y pudiera agrear alguna animacion como web transition API el cual hace muy agradable la experiencia para el usuario.
+¿Qué haría de manera diferente si se le asignara más tiempo?
+Hubiera aprovechado mas la libreria Material UI, se que tiene bastantes componentes excelentes, pero la he usado muy poco y se que pude aprovecharla mas.
+Optimizar un poco mas el renderizado y cargado de la aplicacion.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
