@@ -1,95 +1,73 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Link from "next/link";
+import { Card } from "@mui/material";
+import movie from "../../public/placeholder.png";
+import Image from "next/image";
+import { Position } from "./types";
 
-export default function Home() {
+const cardStyle = {
+  backgroundColor: "#414141",
+  color: "white",
+  height: "140px",
+  width: "100px",
+  display: "flex",
+  fontSize: "35px",
+  textDecoration: "none",
+  justifyContent: "center",
+  alignItems: "center",
+  padding: "16px",
+  marginBottom: "16px",
+  position: "relative" as Position,
+};
+const divStyle = {
+  backgroundColor: "#414141",
+  color: "white",
+  padding: "20px 60px",
+};
+const divContainer = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: "22px",
+  height: "60vh",
+};
+const imageStyle = {
+  position: "absolute" as Position,
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+};
+const Home = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <main>
+      <div style={divStyle}>Popular Titles</div>
+      <div style={divContainer}>
+        <Link href="/series" style={{ textDecoration: "none" }}>
+          <Card style={cardStyle}>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+              src={movie}
+              alt="movie"
+              width={200}
+              height={200}
+              style={imageStyle}
             />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+            SERIES
+          </Card>
+        </Link>
+        <Link href="/movies" style={{ textDecoration: "none" }}>
+          <Card style={cardStyle}>
+            <Image
+              src={movie}
+              alt="movie"
+              width={200}
+              height={200}
+              style={imageStyle}
+            />
+            MOVIES
+          </Card>
+        </Link>
       </div>
     </main>
-  )
-}
+  );
+};
+
+export default Home;
