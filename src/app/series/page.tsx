@@ -1,5 +1,5 @@
 "use client";
-import dataJson from "../../../../prueba-tecnica-react-developer/data/sample.json";
+import dataJson from "../data/sample.json";
 import { useState } from "react";
 import ModalComp from "../components/ModalComp";
 import GridComp from "../components/GridComp";
